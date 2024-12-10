@@ -22,7 +22,7 @@ Route::get('/', function () {
 Route::get('/create-skill', [SkillController::class, 'renderCreatePage'])
     ->middleware('auth')
     ->name('skillCreate');
-
+// здесь коммент
 Route::post('/create-skill', [SkillController::class, 'createSkill'])
     ->middleware('auth')
     ->name('skillCreate.post');
